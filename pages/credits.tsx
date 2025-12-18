@@ -1,6 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+/**
+ * Render the Credits page for the Omaha Tree Care site, presenting the migration timeline, tech stack visualization, Claude credit, an easter-egg code snippet, and footer.
+ *
+ * @returns A JSX element representing the Credits page layout
+ */
 export default function CreditsPage() {
   return (
     <>
