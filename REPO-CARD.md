@@ -82,7 +82,7 @@ It will show your custom card! 🎉
 
 We also created a fun credits page showcasing the design and migration story:
 
-**Visit:** <http://localhost:3000/credits>
+**Visit:** [http://localhost:3000/credits](http://localhost:3000/credits)
 
 Features:
 - Migration timeline (Vite → Next.js)
@@ -95,9 +95,9 @@ You can link to this from your main site as a fun developer detail!
 
 ## Preview the Design
 
-**Live preview page:** <http://localhost:3000/repo-card-preview>
+**Live preview page:** [http://localhost:3000/repo-card-preview](http://localhost:3000/repo-card-preview)
 
-**Credits page:** <http://localhost:3000/credits>
+**Credits page:** [http://localhost:3000/credits](http://localhost:3000/credits)
 
 ## Customization
 
