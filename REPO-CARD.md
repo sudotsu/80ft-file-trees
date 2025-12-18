@@ -15,18 +15,27 @@ The card features:
 
 ### Option 1: Automated Script (Recommended)
 
+**Requirements:**
+- Node.js 18.17+ (for global `fetch()` API)
+- Puppeteer
+
 ```bash
-# 1. Install Puppeteer (one-time setup)
+# 1. Check Node.js version
+node --version  # Should be 18.17.0 or higher
+
+# 2. Install Puppeteer (one-time setup)
 npm install -D puppeteer
 
-# 2. Start dev server
+# 3. Start dev server
 npm run dev
 
-# 3. In another terminal, run the capture script
+# 4. In another terminal, run the capture script
 node scripts/capture-repo-card.js
 
-# 4. Image saved to: public/images/repo-card.png
+# 5. Image saved to: public/images/repo-card.png
 ```
+
+**Note:** If you're using Node.js 16, see the compatibility note in `scripts/capture-repo-card.js`.
 
 ### Option 2: Manual Screenshot
 

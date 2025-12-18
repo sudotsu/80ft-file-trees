@@ -3,10 +3,17 @@
 /**
  * Capture the repo card as an image
  *
+ * Requirements:
+ *   - Node.js 18.17+ (for global fetch API)
+ *   - Puppeteer: npm install -D puppeteer
+ *
  * Usage:
  *   1. Start dev server: npm run dev
  *   2. Run this script: node scripts/capture-repo-card.js
  *   3. Image saved to: public/images/repo-card.png
+ *
+ * Note: This script uses the global fetch() API available in Node.js 18+.
+ * If you need Node 16 support, install node-fetch and import it instead.
  */
 
 const puppeteer = require('puppeteer');
@@ -67,6 +74,7 @@ async function captureRepoCard() {
 }
 
 // Check if dev server is running
+// Uses global fetch() available in Node.js 18+
 async function checkDevServer() {
   try {
     const response = await fetch('http://localhost:3000/repo-card-preview');
@@ -75,6 +83,17 @@ async function checkDevServer() {
     return false;
   }
 }
+
+// For Node.js 16 compatibility, replace the above function with:
+// const fetch = require('node-fetch'); // npm install node-fetch@2
+// async function checkDevServer() {
+//   try {
+//     const response = await fetch('http://localhost:3000/repo-card-preview');
+//     return response.ok;
+//   } catch (error) {
+//     return false;
+//   }
+// }
 
 async function main() {
   const isRunning = await checkDevServer();
