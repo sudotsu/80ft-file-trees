@@ -72,8 +72,14 @@ npm install
 ```
 
 **Prerequisites:**
-- Node.js 18+ (download from https://nodejs.org)
-- npm (comes with Node.js)
+- **Node.js 18.17+** (download from https://nodejs.org)
+- npm 9+ (comes with Node.js)
+
+```bash
+# Check your versions
+node --version  # Should be 18.17.0 or higher
+npm --version   # Should be 9.0.0 or higher
+```
 
 ### 2. Run Development Server
 
