@@ -80,11 +80,9 @@ It will show your custom card! 🎉
 
 ## Easter Egg: Credits Page
 
-We also created a fun credits page showcasing the design and migration story:
+We also created a fun credits page showcasing the design and migration story.
 
-**Visit:** [http://localhost:3000/credits](http://localhost:3000/credits)
-
-Features:
+**Visit the [credits page](http://localhost:3000/credits)** to see:
 - Migration timeline (Vite → Next.js)
 - Live embed of the repo card
 - Tech stack stats
@@ -95,9 +93,8 @@ You can link to this from your main site as a fun developer detail!
 
 ## Preview the Design
 
-**Live preview page:** [http://localhost:3000/repo-card-preview](http://localhost:3000/repo-card-preview)
-
-**Credits page:** [http://localhost:3000/credits](http://localhost:3000/credits)
+- [Live preview page](http://localhost:3000/repo-card-preview)
+- [Credits page](http://localhost:3000/credits)
 
 ## Customization
 
