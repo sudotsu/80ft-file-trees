@@ -1,5 +1,11 @@
 // Visit http://localhost:3000/repo-card-preview
-// Then right-click > Save Image As...
+/**
+ * Renders a stylized repository preview card with a code-background layer, a terminal-like tech-stack panel, and a bottom metadata line.
+ *
+ * The card shows a monospaced tree/code snippet as a faded background, a faux terminal window with hard-coded tech-stack entries, and a decorative grid overlay. Layout and content are static and purely presentational.
+ *
+ * @returns A JSX element containing the complete repo preview card.
+ */
 
 export default function RepoCardPreview() {
   return (

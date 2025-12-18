@@ -12,6 +12,13 @@
 const puppeteer = require('puppeteer');
 const path = require('path');
 
+/**
+ * Capture the repo card preview page and save it as a PNG image.
+ *
+ * Loads http://localhost:3000/repo-card-preview in a headless browser, waits for network idle and fonts, and writes a 1200×630 PNG to ../public/images/repo-card.png (relative to this script).
+ *
+ * @throws {Error} If navigation, screenshot, or browser operations fail; the original error is rethrown.
+ */
 async function captureRepoCard() {
   console.log('🚀 Starting browser...');
 
@@ -66,7 +73,11 @@ async function captureRepoCard() {
   }
 }
 
-// Check if dev server is running
+/**
+ * Checks whether the local development server is responding at /repo-card-preview.
+ *
+ * @returns {boolean} `true` if the server responds with a successful HTTP status, `false` otherwise.
+ */
 async function checkDevServer() {
   try {
     const response = await fetch('http://localhost:3000/repo-card-preview');
@@ -76,6 +87,11 @@ async function checkDevServer() {
   }
 }
 
+/**
+ * Checks whether the local dev server is running and, if so, captures the repo card image.
+ *
+ * If the dev server is not running, prints instructions to start it and exits the process with status 1.
+ */
 async function main() {
   const isRunning = await checkDevServer();
 
